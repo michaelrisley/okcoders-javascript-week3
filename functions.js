@@ -1,3 +1,8 @@
+// (4) Adding lodash
+// then you do _.(whateverfunction) to call the preinstalled lodash functionality
+
+var _ = require("lodash")
+
 // (1) a good function takes an input and gives an output, without modifying the input
 
 // function sayhi(name, name2) {
@@ -28,6 +33,6 @@ function map(collection, func) {
 	return mapped
 }
 
-var result = map(number, function(elem) {return elem * elem})
+var result = _.map(number, function(elem) {return elem * elem})
 
 console.log(result)
